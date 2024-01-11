@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class="box">
+        <div class="display">
+            <input type="text" name="display" id="dis" disabled>
+        </div>
+        <div class="inp">
+        <input type="button" value="AC" onclick="document.getElementById('dis').value = ' '">
+        <input type="button" value="DE"  onclick="document.getElementById('dis').value = document.getElementById('dis').value.toString().slice(0,-1) ">
+        <input type="button" value="." onclick="document.getElementById('dis').value += '.'" >
+        <input type="button" value="/" onclick="document.getElementById('dis').value += '/'">
+        
+        <input type="button" value="7"  onclick="document.getElementById('dis').value += '7'">
+        <input type="button" value="8"  onclick="document.getElementById('dis').value += '8'">
+        <input type="button" value="9"  onclick="document.getElementById('dis').value += '9'">
+        <input type="button" value="*"  onclick="document.getElementById('dis').value += '*'">
+
+        <input type="button" value="4"  onclick="document.getElementById('dis').value += '4'">
+        <input type="button" value="5"  onclick="document.getElementById('dis').value += '5'">
+        <input type="button" value="6"  onclick="document.getElementById('dis').value += '6'">
+        <input type="button" value="+"  onclick="document.getElementById('dis').value += '+'">
+
+        <input type="button" value="1"  onclick="document.getElementById('dis').value += '1'">
+        <input type="button" value="2"  onclick="document.getElementById('dis').value += '2'">
+        <input type="button" value="3"  onclick="document.getElementById('dis').value += '3'">
+        <input type="button" value="-"  onclick="document.getElementById('dis').value += '-'">
+        
+        <input type="button" value="0"  onclick="document.getElementById('dis').value += '0'">
+        <input type="button" value="00"  onclick="document.getElementById('dis').value += '00'">
+        <input type="button" value="%"  onclick="document.getElementById('dis').value += '%'">
+        <input type="button" value="="  onclick="document.getElementById('dis').value = eval(document.getElementById('dis').value)" >
+        </div>
+    </div>
+</body>
+</html>
